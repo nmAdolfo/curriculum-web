@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,12 +6,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Entrada de Blog Divulgativo</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #4CAF50;
+      color: #fff;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    .section h2 {
+      background: #333;
+      color: #fff;
+      padding: 10px;
+      margin: 20px 0 10px;
+      text-align: center;
+      font-size: 1.5em;
+    }
+    .content {
+      padding: 20px;
+      font-size: 1em;
+      line-height: 1.6;
+    }
+    .item {
+      margin-bottom: 20px;
+    }
+    .item h3 {
+      color: #4CAF50;
+      margin-bottom: 5px;
+      font-size: 1.2em;
+    }
+    .item p {
+      margin: 5px 0;
+    }
+  </style>
 </head>
 <body>
   <header>
     <nav>
       <ul>
-        <li><a href="index.html">Inicio</a></li>
         <li><a href="presentacion.html">Presentación</a></li>
         <li><a href="cv.html">Currículum Vitae</a></li>
         <li><a href="cv_infografico.html">CV Infográfico</a></li>
@@ -20,17 +70,112 @@
     </nav>
     <h1>Entrada de Blog Divulgativo</h1>
   </header>
-  <main>
-    <section>
-      <h2>La Programación Orientada a Objetos en Videojuegos</h2>
+  <div class="container">
+    <div class="header">
+      <h1>La Programación Orientada a Objetos en el Desarrollo de Videojuegos</h1>
+    </div>
+    
+    <div class="section">
+      <h2>Introducción</h2>
       <div class="content">
-        <p>La programación orientada a objetos (POO) es un paradigma fundamental en el desarrollo de software moderno...</p>
-        <!-- Resto del contenido -->
+        <div class="item">
+          <h3>¿Qué es la Programación Orientada a Objetos?</h3>
+          <p>
+            La Programación Orientada a Objetos (POO) es un paradigma de programación que utiliza "objetos" para diseñar aplicaciones y programas. Estos objetos son instancias de clases, que pueden contener datos en forma de campos y código en forma de métodos. Este enfoque facilita la creación de software modular, reutilizable y escalable.
+          </p>
+          <p>
+            En la industria de los videojuegos, la POO es esencial para gestionar la complejidad de los sistemas de juego. Desde la definición de personajes y sus interacciones hasta la gestión del entorno y los eventos del juego, la POO proporciona una estructura clara y eficiente.
+          </p>
+        </div>
       </div>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 Adolfo Núñez Morales. Todos los derechos reservados.</p>
-  </footer>
+    </div>
+
+    <div class="section">
+      <h2>Principios de la Programación Orientada a Objetos</h2>
+      <div class="content">
+        <div class="item">
+          <h3>Encapsulamiento</h3>
+          <p>
+            El encapsulamiento es el principio que permite agrupar datos y métodos que operan sobre esos datos dentro de una única unidad, o clase. Esto ayuda a proteger los datos de accesos no autorizados y a mantener el código modular y manejable. En el contexto de los videojuegos, el encapsulamiento asegura que los atributos de los personajes, como la salud o la posición, no sean modificados directamente por otras partes del código, lo que podría causar errores.
+          </p>
+        </div>
+        <div class="item">
+          <h3>Abstracción</h3>
+          <p>
+            La abstracción permite ocultar los detalles de implementación y mostrar solo la funcionalidad esencial. Esto simplifica el proceso de desarrollo al permitir a los desarrolladores centrarse en los aspectos importantes del juego sin preocuparse por los detalles subyacentes. Por ejemplo, un objeto <code>Personaje</code> puede tener métodos como <code>moverse()</code> y <code>atacar()</code> sin que los desarrolladores necesiten saber cómo se implementan internamente estas acciones.
+          </p>
+        </div>
+        <div class="item">
+          <h3>Herencia</h3>
+          <p>
+            La herencia permite crear nuevas clases a partir de clases existentes, reutilizando código y facilitando la extensión de funcionalidades. En los videojuegos, esto es útil para crear jerarquías de objetos. Por ejemplo, una clase base <code>Personaje</code> puede ser heredada por clases más específicas como <code>Jugador</code> y <code>Enemigo</code>, que comparten características comunes pero también tienen comportamientos específicos.
+          </p>
+        </div>
+        <div class="item">
+          <h3>Polimorfismo</h3>
+          <p>
+            El polimorfismo permite tratar objetos de diferentes clases de manera uniforme, usando una interfaz común. Esto es especialmente útil en el desarrollo de videojuegos para manejar diferentes tipos de objetos de manera coherente. Por ejemplo, tanto los <code>Jugadores</code> como los <code>Enemigos</code> pueden ser tratados como <code>Personajes</code> cuando se gestionan sus movimientos y acciones, lo que simplifica el código y mejora la flexibilidad.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Beneficios de la POO en el Desarrollo de Videojuegos</h2>
+      <div class="content">
+        <div class="item">
+          <p>
+            La adopción de la POO en el desarrollo de videojuegos ofrece numerosos beneficios:
+          </p>
+          <ul>
+            <li><strong>Reutilización de Código:</strong> La herencia y la composición permiten reutilizar código, lo que reduce el tiempo y el esfuerzo necesarios para desarrollar nuevas funcionalidades. Esto es crucial en proyectos grandes donde la eficiencia y la rapidez son esenciales.</li>
+            <li><strong>Mantenibilidad:</strong> La modularidad y el encapsulamiento facilitan la localización y corrección de errores, así como la implementación de mejoras. Un código bien estructurado es más fácil de mantener y actualizar.</li>
+            <li><strong>Escalabilidad:</strong> La POO facilita la ampliación de proyectos existentes mediante la adición de nuevas clases y funcionalidades sin afectar negativamente al código existente. Esto es particularmente importante en juegos que se actualizan regularmente con nuevos contenidos.</li>
+            <li><strong>Colaboración:</strong> La POO permite a los equipos de desarrollo trabajar de manera más eficaz, ya que los objetos bien definidos y las interfaces claras facilitan la división del trabajo y la integración de componentes. Esto mejora la productividad y la coherencia del proyecto.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Ejemplo Práctico: Aplicación en un Juego de Disparos</h2>
+      <div class="content">
+        <div class="item">
+          <p>
+            En un juego de disparos como Rainbow Six Siege, los objetos pueden representar personajes, armas y elementos del entorno. Cada objeto puede heredar de una clase base que define propiedades comunes, como posición y estado, permitiendo que las interacciones entre ellos se manejen de forma coherente y eficiente.
+          </p>
+          <p>
+            Por ejemplo, una clase base <code>Personaje</code> podría definir atributos y métodos comunes como <code>salud</code>, <code>moverse()</code> y <code>atacar()</code>. Las clases derivadas como <code>Soldado</code> y <code>Especialista</code> pueden heredar de <code>Personaje</code> y agregar o modificar funcionalidades específicas. Este enfoque no solo simplifica el diseño del juego, sino que también facilita la implementación de nuevas características y la corrección de errores.
+          </p>
+          <p>
+            Además, la POO permite manejar las interacciones complejas entre diferentes tipos de objetos de manera eficiente. Por ejemplo, cuando un <code>Soldado</code> dispara un <code>arma</code>, el juego debe calcular si el disparo impacta en un <code>Enemigo</code> o en una <code>pared</code>. Estas interacciones pueden gestionarse mediante métodos y propiedades definidas en las clases base y sus derivadas.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Conclusión</h2>
+      <div class="content">
+        <div class="item">
+          <p>
+            La programación orientada a objetos es esencial para el desarrollo de videojuegos complejos y de alta calidad. Su aplicación no solo mejora la estructura y mantenimiento del código, sino que también facilita la colaboración y la innovación en equipos de desarrollo multidisciplinarios. En un entorno donde la eficiencia y la escalabilidad son cruciales, la POO proporciona las herramientas necesarias para crear experiencias de juego excepcionales y sostenibles.
+          </p>
+          <p>
+            En Ubisoft, la aplicación de la POO es un componente central de nuestro enfoque de desarrollo. Estamos comprometidos con la creación de juegos innovadores que no solo entretengan, sino que también desafíen y sorprendan a nuestros jugadores. Si compartes nuestra pasión por la programación orientada a objetos y el desarrollo de videojuegos, te invitamos a unirte a nuestro equipo y contribuir al futuro de los juegos AAA.
+          </p>
+          <p>
+            La POO no es solo una técnica de programación, es una filosofía que mejora la manera en que desarrollamos software y juegos. Al adoptar esta metodología, los desarrolladores pueden construir mundos virtuales ricos y detallados que proporcionan experiencias inmersivas y memorables para los jugadores. La capacidad de extender y mejorar continuamente estos mundos asegura que los juegos permanezcan relevantes y emocionantes en el tiempo.
+          </p>
+          <p>
+            Además, la POO fomenta una cultura de aprendizaje y adaptación continua. Los desarrolladores deben mantenerse actualizados con las mejores prácticas y patrones de diseño, lo que contribuye al crecimiento profesional y a la innovación constante en la industria de los videojuegos.
+          </p>
+          <p>
+            En resumen, la programación orientada a objetos es una herramienta poderosa que, cuando se aplica correctamente, puede transformar la manera en que se desarrollan los videojuegos. En Ubisoft, estamos emocionados por las posibilidades que ofrece y estamos ansiosos por ver cómo nuestros equipos de desarrollo continuarán utilizando la POO para crear los juegos del futuro.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
