@@ -3,60 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
   <title>Video Curriculum</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-    .container {
-      max-width: 900px;
-      margin: 20px auto;
-      background: #fff;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .header {
-      text-align: center;
-      padding: 20px 0;
-      background-color: #4CAF50;
-      color: #fff;
-    }
-    .header h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-    .section h2 {
-      background: #333;
-      color: #fff;
-      padding: 10px;
-      margin: 20px 0 10px;
-      text-align: center;
-      font-size: 1.5em;
-    }
-    .content {
-      padding: 20px;
-      font-size: 1em;
-      line-height: 1.6;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>Video Curriculum</h1>
-    </div>
-    <div class="content">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="presentacion.html">Presentación</a></li>
+        <li><a href="cv.html">Currículum Vitae</a></li>
+        <li><a href="cv_infografico.html">CV Infográfico</a></li>
+        <li><a href="video_cv.html">Video Curriculum</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <h1>Video Curriculum</h1>
+  </header>
+  <main>
+    <section>
       <h2>Mi Video Curriculum</h2>
-      <video controls width="100%">
-        <source src="video_cv.mp4" type="video/mp4">
-        Tu navegador no soporta la reproducción de videos.
-      </video>
-    </div>
-  </div>
+      <div class="content">
+        <video controls width="100%">
+          <source src="video_cv.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de videos.
+        </video>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Adolfo Núñez Morales. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
