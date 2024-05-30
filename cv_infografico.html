@@ -5,12 +5,122 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV Infográfico</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #4CAF50;
+      color: #fff;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    .section {
+      margin: 20px 0;
+    }
+    .section h2 {
+      background: #333;
+      color: #fff;
+      padding: 10px;
+      margin: 0 -20px;
+      text-align: center;
+      font-size: 1.5em;
+    }
+    .content {
+      padding: 20px;
+      font-size: 1em;
+      line-height: 1.6;
+    }
+    .timeline {
+      position: relative;
+      padding: 20px 0;
+    }
+    .timeline:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #4CAF50;
+      transform: translateX(-50%);
+    }
+    .timeline-item {
+      position: relative;
+      width: 50%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .timeline-item:nth-child(odd) {
+      left: 0;
+    }
+    .timeline-item:nth-child(even) {
+      left: 50%;
+    }
+    .timeline-item:before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #4CAF50;
+      top: 30px;
+      left: -10px;
+      transform: translateX(-50%);
+    }
+    .timeline-item:nth-child(even):before {
+      left: calc(100% + 10px);
+    }
+    .timeline-item h3 {
+      margin: 0 0 10px;
+      color: #4CAF50;
+      font-size: 1.2em;
+    }
+    .timeline-item p {
+      margin: 0;
+      font-size: 1em;
+      color: #666;
+    }
+    .skills, .languages, .interests {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .skills div, .languages div, .interests div {
+      width: 30%;
+      text-align: center;
+      padding: 10px;
+      background: #f0f0f0;
+      margin: 10px 0;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    .skills div span, .languages div span, .interests div span {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #4CAF50;
+    }
+  </style>
 </head>
 <body>
   <header>
     <nav>
       <ul>
-        <li><a href="index.html">Inicio</a></li>
         <li><a href="presentacion.html">Presentación</a></li>
         <li><a href="cv.html">Currículum Vitae</a></li>
         <li><a href="cv_infografico.html">CV Infográfico</a></li>
@@ -20,17 +130,109 @@
     </nav>
     <h1>CV Infográfico</h1>
   </header>
-  <main>
-    <section>
-      <h2>Infografía del CV</h2>
-      <div class="content">
-        <!-- Aquí puedes incluir tu CV infográfico como una imagen o usando gráficos HTML y CSS -->
-        <img src="ruta/a/tu/cv_infografico.png" alt="CV Infográfico" style="width: 100%;">
+  <div class="container">
+    <div class="header">
+      <h1>CV Infográfico</h1>
+      <p>Adolfo Núñez Morales</p>
+    </div>
+    
+    <div class="section">
+      <h2>Experiencia Profesional</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Abogado del Turno de Oficio del ICAM</h3>
+          <p>Derecho civil, penal, violencia de género y vigilancia penitenciaria. Desde 2018.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Abogado en Bufete Nuñez Astray y Asociados</h3>
+          <p>Especializado en Derecho Mercantil, 2014-2015.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Dirección y Organización en Marca de Ropa Deportiva MIGARU</h3>
+          <p>Guadalajara, Jalisco, México, 2011-2014.</p>
+        </div>
       </div>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 Adolfo Núñez Morales. Todos los derechos reservados.</p>
-  </footer>
+    </div>
+    
+    <div class="section">
+      <h2>Formación Académica</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Grado en Ingeniería Informática</h3>
+          <p>Universidad Politécnica de Madrid, desde 2018.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Curso de Perito Judicial Contador Partidor</h3>
+          <p>Asociación Colegial de Peritos Judiciales del Reino de España y Centro de Formación Pericial, 2022.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Máster en Práctica Jurídica</h3>
+          <p>Centro de Estudios e Investigaciones Jurídicas, 2018.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Licenciatura en Derecho</h3>
+          <p>Universidad Complutense de Madrid, 2002-2007.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>Habilidades</h2>
+      <div class="skills">
+        <div>
+          <span>C/C++</span>
+          Programación
+        </div>
+        <div>
+          <span>Visual Studio</span>
+          Desarrollo
+        </div>
+        <div>
+          <span>Perforce</span>
+          Control de Versiones
+        </div>
+        <div>
+          <span>Debugging</span>
+          Solución de Problemas
+        </div>
+        <div>
+          <span>Microsoft Office</span>
+          Productividad
+        </div>
+        <div>
+          <span>Jira</span>
+          Gestión de Proyectos
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>Idiomas</h2>
+      <div class="languages">
+        <div>
+          <span>Español</span>
+          Nativo
+        </div>
+        <div>
+          <span>Inglés</span>
+          Medio-Alto
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>Intereses</h2>
+      <div class="interests">
+        <div>
+          <span>Deportes al Aire Libre</span>
+          Escalada, Ciclismo
+        </div>
+        <div>
+          <span>Teatro de Improvisación</span>
+          Clases Regulares
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
